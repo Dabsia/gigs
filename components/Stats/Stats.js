@@ -102,6 +102,7 @@ const styles = StyleSheet.create({
     gigTime: {
         color: COLORS.gray,
         fontSize: 12,
+        fontWeight: '600',
     },
     recentClientsBox: {
         backgroundColor: COLORS.primary,

@@ -7,7 +7,7 @@ import Home from "../../Screens/Home/Home";
 
 
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator()
 
 const AppNavigator = () => {
     <Tab.Navigator
