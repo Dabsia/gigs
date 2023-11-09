@@ -1,11 +1,10 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import { COLORS } from '../../constants/theme'
-// import CircularProgress from 'react-native-circular-progress-indicator';
-// import { CircularProgressbar } from 'react-circular-progressbar';
 
 
-const Gig = () => {
+
+const GigsCard = () => {
     const percentage = 66;
 
 
@@ -19,12 +18,11 @@ const Gig = () => {
                 </View>
             </View>
 
-
         </View>
     )
 }
-// <CircularProgressbar value={percentage} text={`${percentage}%`} />
-export default Gig
+
+export default GigsCard
 
 const styles = StyleSheet.create({
     gigBox: {

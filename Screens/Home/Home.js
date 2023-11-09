@@ -25,6 +25,7 @@ export default Home
 
 const styles = StyleSheet.create({
     wrapper: {
-        padding: 15
+        paddingHorizontal: 15,
+        MarginTop: 30
     }
 })

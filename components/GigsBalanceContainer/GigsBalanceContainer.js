@@ -24,7 +24,7 @@ const GigsBalanceContainer = () => {
                     <View style={styles.amountBox} >
                         <Text style={styles.amount} >Amount: </Text>
                         {!showMoney ? <Text style={styles.money} >₦3,250,000</Text> :
-                            <Text style={styles.money} >Hidden</Text>}
+                            <Text style={styles.money} >****</Text>}
 
                     </View>
                     <TouchableOpacity onPress={toggle} >
