@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 import React from 'react'
-import Goback from '../Goback/Goback'
+import Goback from '../../components/Goback/Goback'
 import { COLORS } from '../../constants/theme'
-import GigDetailsHeader from '../GigDetailsHeader/GigDetailsHeader'
-import GigCategoryItems from '../GigCategoryItems/GigCategoryItems'
+import GigDetailsHeader from '../../components/GigDetailsHeader/GigDetailsHeader'
+import GigCategoryItems from '../../components/GigCategoryItems/GigCategoryItems'
 
 const GigCategory = () => {
     return (
