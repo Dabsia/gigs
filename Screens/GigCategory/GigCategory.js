@@ -1,9 +1,10 @@
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
+import { View, Text, StyleSheet, } from 'react-native'
 import React from 'react'
 import Goback from '../../components/Goback/Goback'
 import { COLORS } from '../../constants/theme'
 import GigDetailsHeader from '../../components/GigDetailsHeader/GigDetailsHeader'
 import GigCategoryItems from '../../components/GigCategoryItems/GigCategoryItems'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const GigCategory = () => {
     return (
@@ -22,7 +23,7 @@ export default GigCategory
 
 const styles = StyleSheet.create({
     wrapper: {
-        paddingVertical: 50,
+
         paddingHorizontal: 10,
         height: '100%',
 

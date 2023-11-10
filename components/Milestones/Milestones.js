@@ -17,7 +17,7 @@ const Milestones = () => {
                             size={20}
                             style={styles.icon}
                         />
-                        <TextInput style={styles.input2} />
+                        <TextInput underlineColor={COLORS.secondary} style={styles.input2} />
 
                     </View>
                 </View>
@@ -25,7 +25,7 @@ const Milestones = () => {
                     <Text style={styles.name} >Amount</Text>
                     <View style={styles.miniInput} >
                         <Text style={styles.naira} >₦</Text>
-                        <TextInput style={styles.input2} />
+                        <TextInput underlineColor={COLORS.secondary} style={styles.input2} />
 
                     </View>
                 </View>

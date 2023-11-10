@@ -21,11 +21,11 @@ const GigsFinancialDetail = () => {
 
                     <GigDetailsHeader title={"Financial details"} question={'How much is the gig?'} />
                     <Text style={styles.name} >Amount</Text>
-                    <TextInput style={styles.input} />
+                    <TextInput underlineColor={COLORS.secondary} style={styles.input} />
                     <Text style={styles.amount} >How much is your starting amount?</Text>
                     <Text style={styles.name} >Amount</Text>
 
-                    <TextInput style={styles.input} />
+                    <TextInput underlineColor={COLORS.secondary} style={styles.input} />
                     <Text style={styles.note} >NOTE: We strongly recommend not to start a gig without any part payment.</Text>
                     <Text style={styles.amount} >How would you be paid?</Text>
                     <View style={styles.optionContainer} >
@@ -38,7 +38,7 @@ const GigsFinancialDetail = () => {
                     </View>
                     <>
                         <Text style={styles.name} >1. Description</Text>
-                        <TextInput style={styles.input} />
+                        <TextInput underlineColor={COLORS.secondary} style={styles.input} />
                     </>
 
                     <Milestones />
@@ -118,6 +118,7 @@ const styles = StyleSheet.create({
         fontWeight: '500'
     }, name: {
         marginTop: 50,
-        color: COLORS.gray
+        color: COLORS.gray,
+        width: 'fit-content'
     },
 })

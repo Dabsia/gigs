@@ -4,10 +4,13 @@ import { useFonts } from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from 'react';
 import Navigation from './components/Navigation/Navigation';
-import { SafeAreaView } from 'react-native';
+
 import GigCategory from './Screens/GigCategory/GigCategory';
 import Gigname from './Screens/Gigname/Gigname';
 import GigsFinancialDetail from './Screens/GigsFinancialDetail/GigsFinancialDetail';
+import GroupGigs from './Screens/GroupGigs/GroupGigs';
+import PersonalGigs from './Screens/PersonalGigs/PersonalGigs';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 
@@ -31,7 +34,8 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container} onLayout={onLayoutRootView} >
 
-      <GigsFinancialDetail />
+      {/*<GigsFinancialDetail />*/}
+      <GigCategory />
       <StatusBar />
     </SafeAreaView>
   );

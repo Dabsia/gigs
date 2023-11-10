@@ -43,7 +43,7 @@ const GigDetails = () => {
 
                 <Text style={styles.amount} >What’s the name of your client?</Text>
                 <Text style={styles.name} >Name</Text>
-                <TextInput style={styles.input} />
+                <TextInput underlineColor={COLORS.secondary} style={styles.input} />
 
             </View>
 

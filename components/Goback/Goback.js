@@ -5,7 +5,7 @@ import { Icon } from 'react-native-paper'
 
 const Goback = ({ title }) => {
     return (
-        <View>
+        <View style={styles.container} >
             <TouchableOpacity style={styles.iconContainer}  >
                 <Icon
                     source="chevron-left"
@@ -14,7 +14,7 @@ const Goback = ({ title }) => {
                 />
             </TouchableOpacity>
 
-            <Text>{title}</Text>
+            <Text style={styles.text} >{title}</Text>
         </View>
     )
 }
@@ -31,7 +31,19 @@ const styles = StyleSheet.create({
         borderRadius: 40 / 2,
         backgroundColor: 'white',
         justifyContent: 'center',
+
         alignItems: 'center',
-        marginTop: 20
+        marginVertical: 20
     },
+    container: {
+        flexDirection: 'row',
+
+    },
+    text: {
+        alignSelf: 'center',
+        marginLeft: 20,
+        fontWeight: 'bold',
+        fontSize: 17,
+        marginTop: 20
+    }
 })
