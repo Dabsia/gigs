@@ -2,12 +2,17 @@ import { View, TouchableOpacity, Text, StyleSheet } from 'react-native'
 import { Button } from 'react-native-paper'
 import React from 'react'
 import { COLORS } from '../../constants/theme'
+import { useNavigation } from '@react-navigation/native'
 
 
-const ContinueBtn = () => {
+const ContinueBtn = ({ name }) => {
+    const navigation = useNavigation();
+    const Next = () => {
+        navigation.navigate(name)
+    }
     return (
         <View style={styles.container} >
-            <Button style={styles.button} buttonColor={COLORS.secondary} mode="contained" >Continue</Button>
+            <Button style={styles.button} onPress={() => { Next(name) }} buttonColor={COLORS.secondary} mode="contained" >Continue</Button>
             <TouchableOpacity><Text style={styles.cancel} >CANCEL GIG</Text></TouchableOpacity>
         </View>
     )

@@ -19,7 +19,7 @@ const Gigname = () => {
                 <Text style={styles.description} >Give it a simple name. Eg Fintech UI Design or Frontend School project. Keep it at 3 words...</Text>
             </View>
 
-            <ContinueBtn />
+            <ContinueBtn name={'GigsDetails'} />
         </SafeAreaView>
     )
 }
@@ -29,7 +29,6 @@ export default Gigname
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 50,
         paddingHorizontal: 20,
         justifyContent: 'space-between',
         height: '100%',

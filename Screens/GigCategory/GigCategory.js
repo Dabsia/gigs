@@ -9,9 +9,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 const GigCategory = () => {
     return (
         <SafeAreaView style={styles.wrapper} >
-            <View>
-                <Goback />
-            </View>
+            <Goback />
             <GigDetailsHeader title={'Choose'} question={'Select gig category...'} />
             <GigCategoryItems />
 

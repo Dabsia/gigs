@@ -47,7 +47,7 @@ const GigDetails = () => {
 
             </View>
 
-            <ContinueBtn />
+            <ContinueBtn name={'GigsFinancialDetails'} />
         </SafeAreaView>
     )
 }
@@ -58,7 +58,7 @@ export default GigDetails
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 50,
+
         paddingHorizontal: 20,
         justifyContent: 'space-between',
         height: '100%',

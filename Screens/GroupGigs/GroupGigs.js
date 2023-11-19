@@ -9,7 +9,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 const GroupGigs = () => {
     return (
         <SafeAreaView style={styles.wrapper}>
-            <Goback title={'Group Gigs'} />
+
             <BalanceComponent title={'Gigs Balance'} amount={'3,250,000'} />
             <GigsList />
             <GigAdder />

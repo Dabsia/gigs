@@ -3,6 +3,7 @@ export const COLORS = {
     secondary: "#0166F6",
     tertiary: '#0166F6',
 
+
     white: "#FFF",
     gray: 'rgba(5, 4, 33, 0.7)',
     pink: 'rgba(255, 9, 53, 0.05)',
@@ -10,12 +11,12 @@ export const COLORS = {
 };
 
 export const SIZES = {
-    base: '8',
-    small: '12',
-    font: '14',
-    medium: '16',
-    large: '18',
-    extraLarge: '24',
+    base: 8,
+    small: 12,
+    font: 14,
+    medium: 16,
+    large: 18,
+    extraLarge: 24,
 };
 
 export const FONTS = {

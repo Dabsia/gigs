@@ -11,6 +11,7 @@ import GigsFinancialDetail from './Screens/GigsFinancialDetail/GigsFinancialDeta
 import GroupGigs from './Screens/GroupGigs/GroupGigs';
 import PersonalGigs from './Screens/PersonalGigs/PersonalGigs';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Invoice from './Screens/Invoice/Invoice';
 
 
 
@@ -35,7 +36,7 @@ export default function App() {
     <SafeAreaView style={styles.container} onLayout={onLayoutRootView} >
 
       {/*<GigsFinancialDetail />*/}
-      <GigCategory />
+      <Navigation />
       <StatusBar />
     </SafeAreaView>
   );

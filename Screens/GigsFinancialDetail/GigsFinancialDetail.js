@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StyleSheet, ScrollView, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Goback from '../../components/Goback/Goback'
 import GigDetailsHeader from '../../components/GigDetailsHeader/GigDetailsHeader'
@@ -6,6 +6,7 @@ import { TextInput } from 'react-native-paper'
 import { COLORS } from '../../constants/theme'
 import Milestones from '../../components/Milestones/Milestones'
 import ContinueBtn from '../../components/ContinueBtn/ContinueBtn'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 
 
@@ -43,7 +44,7 @@ const GigsFinancialDetail = () => {
 
                     <Milestones />
                 </View>
-                <ContinueBtn />
+                <ContinueBtn name={'GigsInvoice'} />
 
             </ScrollView>
         </SafeAreaView>
@@ -55,7 +56,7 @@ export default GigsFinancialDetail
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 50,
+
         paddingHorizontal: 20,
 
 

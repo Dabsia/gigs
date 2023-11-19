@@ -6,11 +6,16 @@ import Palette from '../../assets/images/Palette.png'
 import Safari from '../../assets/images/Safari.png'
 import Pen from '../../assets/images/Pen.png'
 import Add from '../../assets/images/Add.png'
+import { useNavigation } from '@react-navigation/native'
 
 const GigCategoryItems = () => {
+    const navigation = useNavigation();
+    const Next = () => {
+        navigation.navigate("GigsName")
+    }
     return (
         <View style={styles.parentContainer} >
-            <TouchableOpacity style={styles.container} >
+            <TouchableOpacity style={styles.container} onPress={Next}>
                 <View style={styles.box} >
                     <View style={styles.imageContainer}>
                         <Image source={Coding} style={styles.image} />
@@ -81,8 +86,10 @@ const styles = StyleSheet.create({
     },
     parentContainer: {
         width: '100%',
+        paddingHorizontal: 10,
         height: '100%',
         flexWrap: 'wrap',
+
         marginTop: 30,
         flexDirection: 'row',
         justifyContent: 'space-between',
