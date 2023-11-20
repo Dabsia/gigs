@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, ScrollView } from 'react-native'
+import { StyleSheet, View, Text, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Goback from '../../components/Goback/Goback'
@@ -6,6 +6,7 @@ import { COLORS, SIZES } from '../../constants/theme'
 import GigInfo from '../../components/GigInfo/GigInfo'
 import GigInfo2 from '../../components/GigInfo2/GigInfo2'
 import ContinueBtn from '../../components/ContinueBtn/ContinueBtn'
+import { Icon } from 'react-native-paper'
 
 const Invoice = () => {
     return (
@@ -24,7 +25,26 @@ const Invoice = () => {
                             <Text style={styles.gigAmountText} >GIG AMOUNT</Text>
                             <Text style={styles.amount} >₦400,000</Text>
                         </View>
+                        <View>
+                            <TouchableOpacity style={styles.previewContainer} >
+                                <Text style={styles.previewText} >Preview Invoice</Text>
+                                <Icon
+                                    source="chevron-right"
+                                    color={'#fff'}
+                                    size={30}
 
+                                />
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.previewContainer} >
+                                <Text style={styles.previewText} >Send Invoice</Text>
+                                <Icon
+                                    source="upload"
+                                    color={'#fff'}
+                                    size={30}
+
+                                />
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
                 <View style={styles.gigInfosBox} >
@@ -61,7 +81,7 @@ const styles = StyleSheet.create({
 
     },
     contentContainer: {
-        height: 1000,
+        height: 1200,
     },
     background: {
         width: '90%',
@@ -100,5 +120,17 @@ const styles = StyleSheet.create({
         width: '90%',
         alignSelf: 'center',
         marginTop: 20
+    },
+    previewContainer: {
+        flexDirection: 'row',
+        width: '100%',
+        justifyContent: 'space-between',
+        paddingVertical: 20,
+        borderTopColor: 'rgba(217, 217, 217, 1)',
+        borderTopWidth: 1
+    },
+    previewText: {
+        color: COLORS.white
     }
+
 })
