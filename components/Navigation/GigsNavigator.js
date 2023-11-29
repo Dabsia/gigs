@@ -7,6 +7,8 @@ import GigDetails from '../../Screens/GigDetails/GigDetails'
 import GigsFinancialDetail from '../../Screens/GigsFinancialDetail/GigsFinancialDetail'
 import Invoice from '../../Screens/Invoice/Invoice'
 import GigCategory from '../../Screens/GigCategory/GigCategory'
+import GroupGigs from '../../Screens/GroupGigs/GroupGigs'
+import GigScreen from '../../Screens/GigScreen/GigScreen'
 
 
 const GigsNavigatorStack = createNativeStackNavigator()
@@ -19,9 +21,18 @@ const GigsNavigator = () => {
                 name='Gigs'
                 component={Gigs}
             />
+            <GigsNavigatorStack.Screen options={{ headerShown: false }}
+                name='GigScreen'
+                component={GigScreen}
+            />
             <GigsNavigatorStack.Screen
                 name='PersonalGigs'
                 component={PersonalGigs}
+                options={{ headerShown: false }}
+            />
+            <GigsNavigatorStack.Screen
+                name='GroupGigs'
+                component={GroupGigs}
                 options={{ headerShown: false }}
             />
             <GigsNavigatorStack.Screen

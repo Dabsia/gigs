@@ -26,24 +26,31 @@ const Invoice = () => {
                             <Text style={styles.amount} >₦400,000</Text>
                         </View>
                         <View>
-                            <TouchableOpacity style={styles.previewContainer} >
-                                <Text style={styles.previewText} >Preview Invoice</Text>
-                                <Icon
-                                    source="chevron-right"
-                                    color={'#fff'}
-                                    size={30}
+                            <View style={styles.previewContainer} >
+                                <TouchableOpacity style={styles.boxHolder} >
+                                    <Text style={styles.previewText} >Preview Invoice</Text>
+                                    <Icon
+                                        source="chevron-right"
+                                        color={'#fff'}
+                                        size={30}
 
-                                />
-                            </TouchableOpacity>
-                            <TouchableOpacity style={styles.previewContainer} >
-                                <Text style={styles.previewText} >Send Invoice</Text>
-                                <Icon
-                                    source="upload"
-                                    color={'#fff'}
-                                    size={30}
+                                    />
+                                </TouchableOpacity>
 
-                                />
-                            </TouchableOpacity>
+                            </View>
+
+                            <View style={styles.previewContainer} >
+                                <TouchableOpacity style={styles.boxHolder} >
+                                    <Text style={styles.previewText} >Send Invoice</Text>
+                                    <Icon
+                                        source="upload"
+                                        color={'#fff'}
+                                        size={30}
+
+                                    />
+                                </TouchableOpacity>
+
+                            </View>
                         </View>
                     </View>
                 </View>
@@ -122,12 +129,17 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
     previewContainer: {
-        flexDirection: 'row',
+
         width: '100%',
-        justifyContent: 'space-between',
+
         paddingVertical: 20,
         borderTopColor: 'rgba(217, 217, 217, 1)',
         borderTopWidth: 1
+    },
+    boxHolder: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '100%',
     },
     previewText: {
         color: COLORS.white

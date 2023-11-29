@@ -1,15 +1,17 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { COLORS } from '../../constants/theme'
-
+import { useNavigation } from '@react-navigation/native'
 
 
 const GigsCard = () => {
     const percentage = 66;
 
+    const navigation = useNavigation()
+
 
     return (
-        <View style={styles.gigBox} >
+        <TouchableOpacity onPress={() => navigation.navigate('GigScreen')} style={styles.gigBox} >
             <View style={styles.gigHolder} >
                 <View style={styles.shape} ></View>
                 <View style={styles.textHolder} >
@@ -18,7 +20,7 @@ const GigsCard = () => {
                 </View>
             </View>
 
-        </View>
+        </TouchableOpacity>
     )
 }
 

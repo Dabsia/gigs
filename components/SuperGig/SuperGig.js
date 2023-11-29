@@ -27,7 +27,7 @@ const SuperGig = ({ navigation }) => {
                 />
 
             </TouchableOpacity>
-            <View style={styles.SuperGigBox2} >
+            <TouchableOpacity style={styles.SuperGigBox2} onPress={() => navigation.navigate('GroupGigs')} >
                 <View style={styles.superGigsInner} >
                     <View style={styles.imageBox} >
                         <Image source={Supergroup} />
@@ -43,7 +43,7 @@ const SuperGig = ({ navigation }) => {
                     size={30}
 
                 />
-            </View>
+            </TouchableOpacity>
         </>
 
     )
