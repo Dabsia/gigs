@@ -2,10 +2,13 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { COLORS } from '../../constants/theme'
 import { useNavigation } from '@react-navigation/native'
+import CircularProgress from 'react-native-circular-progress-indicator'
 
 
 const GigsCard = () => {
-    const percentage = 66;
+    const percentage = 78;
+
+
 
     const navigation = useNavigation()
 
@@ -19,6 +22,17 @@ const GigsCard = () => {
                     <Text style={styles.gigTime} >Jan 10, 2023</Text>
                 </View>
             </View>
+            <View style={styles.progressContainer} >
+                <CircularProgress radius={25}
+                    value={percentage}
+                    textColor={COLORS.primary}
+                    valueSuffix={'%'}
+                    inActiveStrokeColor='#fff'
+                    activeStrokeColor={COLORS.secondary}
+
+                />
+            </View>
+
 
         </TouchableOpacity>
     )
@@ -34,7 +48,8 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.white,
         padding: 10,
         marginBottom: 15,
-
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     },
     gigHolder: {
         flexDirection: 'row',
@@ -63,4 +78,9 @@ const styles = StyleSheet.create({
     textHolder: {
         alignSelf: 'center'
     },
+    progressContainer: {
+
+        alignSelf: 'center',
+
+    }
 })
